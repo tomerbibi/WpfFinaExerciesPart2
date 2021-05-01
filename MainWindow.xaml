@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfFinaExerciesPart2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFinaExerciesPart2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="400">
+
+
+    <Grid>
+        <Canvas>
+            <Label FontSize="28" Content="4 * 3 = ?" Canvas.Left="138" Canvas.Top="46"/>
+            <Button x:Name="correctButton" Width="50" Height="30" Content="12" Canvas.Left="235" Canvas.Top="128" Click="correctButton_Click" RenderTransformOrigin="0.575,-0.528"/>
+            <Button x:Name="wrongButton1" Width="50" Height="30" Content="10" Canvas.Left="105" Canvas.Top="201" Click="wrongButton1_Click"/>
+            <Button x:Name="wrongButton2" Width="50" Height="30" Content="24" Canvas.Left="235" Canvas.Top="201" Click="wrongButton2_Click"/>
+            <Button x:Name="wrongButton3" Width="50" Height="30" Content="7" Canvas.Left="105" Canvas.Top="128" Click="wrongButton3_Click"/>
+            <TextBlock Name="timeLeft" Width="80" Height="40" Canvas.Left="172" Canvas.Top="255"/>
+        </Canvas>
+    </Grid>
+</Window>
